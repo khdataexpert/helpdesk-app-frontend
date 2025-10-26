@@ -1,0 +1,25 @@
+{
+  "Dashboard": "Dashboard",
+  "User Management": "User Management",
+  "Teams": "Teams",
+  "Projects": "Projects",
+  "Tickets": "Tickets",
+  "Contracts": "Contracts",
+  "Invoices": "Invoices",
+  "Roles": "Roles",
+  "Company Name": "Company Name",
+  "Themes": "Themes",
+   "welcome": "Welcome back, {{name}} 👋",
+  "email": "Email",
+  "role": "Role",
+  "permissions_count": "You have {{count}} permissions",
+  "system_overview": "System Overview",
+  "stats": {
+    "users": "Users",
+    "projects": "Projects",
+    "tickets": "Tickets",
+    "contracts": "Contracts",
+    "invoices": "Invoices",
+    "teams": "Teams"
+}
+}
