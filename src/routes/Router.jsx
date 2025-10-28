@@ -6,6 +6,8 @@ import NotFound from "../Components/NotFound/NotFound";
 import DashboardLayout from "../Components/DashboardLayout/DashboradLayout";
 import Users from "../Pages/Users/Users";
 import Roles from "../Pages/Roles/Roles";
+import UsersData from "../Pages/Dashboard/UsersData/UsersData";
+import Companies from "../Pages/Companies/Companies";
 
 const router = createBrowserRouter([
     {
@@ -25,12 +27,14 @@ const router = createBrowserRouter([
                 children: [
                     { path: "dashboard", element: <Dashboard /> },
                     { path: "users", element: <Users /> },
+                    { path: "users/:id", element: <UsersData /> },
+                    { path: "companies", element: <Companies /> },
                     { path: "teams", element: <p className="p-8">Teams Page</p> },
                     { path: "projects", element: <p className="p-8">Projects Page</p> },
                     { path: "tickets", element: <p className="p-8">Tickets Page</p> },
                     { path: "contracts", element: <p className="p-8">Contracts Page</p> },
                     { path: "invoices", element: <p className="p-8">Invoices Page</p> },
-                    { path: "roles", element: <Roles/>},
+                    { path: "roles", element: <Roles /> },
                 ],
             },
 

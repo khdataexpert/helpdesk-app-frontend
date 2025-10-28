@@ -23,13 +23,8 @@ const Sidebar = ({ closeSidebar }) => {
   const lowerPerms = permissions.map(p => p.toLowerCase());
 
   const filteredLinks = sidebarLinks.filter((link) => {
-    if (!link.permission) return true;
-    const lowerLinkPerm = link.permission.toLowerCase();
-    let ownPerm = null;
-    if (lowerLinkPerm.startsWith("view ")) {
-      ownPerm = lowerLinkPerm.replace("view ", "view own ");
-    }
-    return lowerPerms.includes(lowerLinkPerm) || (ownPerm && lowerPerms.includes(ownPerm));
+    if (!link.permissions) return true;
+    return link.permissions.some(perm => lowerPerms.includes(perm.toLowerCase()));
   });
 
   const navLinkClass = ({ isActive }) =>

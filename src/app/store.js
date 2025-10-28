@@ -4,14 +4,15 @@ import usersReducer from "../features/usersSlice";
 import dashboardReducer from "../features/dashboardSlice";
 import roloesReducer from "../features/rolesSlice";
 import permissionsReducer from "../features/permissionSlice";
-
+import companiesReducer from "../features/companiesSlice"
 const store = configureStore({
   reducer: {
     auth: authReducer,
     users: usersReducer,
     dashboard: dashboardReducer,
     roles:roloesReducer,
-    permissions:permissionsReducer
+    permissions:permissionsReducer,
+    companies:companiesReducer,
   },
 });
 
