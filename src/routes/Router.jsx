@@ -8,6 +8,8 @@ import Users from "../Pages/Users/Users";
 import Roles from "../Pages/Roles/Roles";
 import UsersData from "../Pages/Dashboard/UsersData/UsersData";
 import Companies from "../Pages/Companies/Companies";
+import Teams from "../Pages/Teams/Teams";
+import TeamsData from "../Pages/Dashboard/TeamsData/TeamsData";
 
 const router = createBrowserRouter([
     {
@@ -29,7 +31,8 @@ const router = createBrowserRouter([
                     { path: "users", element: <Users /> },
                     { path: "users/:id", element: <UsersData /> },
                     { path: "companies", element: <Companies /> },
-                    { path: "teams", element: <p className="p-8">Teams Page</p> },
+                    { path: "teams", element: <Teams /> },
+                    { path: "/teams/:id", element: <TeamsData /> },
                     { path: "projects", element: <p className="p-8">Projects Page</p> },
                     { path: "tickets", element: <p className="p-8">Tickets Page</p> },
                     { path: "contracts", element: <p className="p-8">Contracts Page</p> },
