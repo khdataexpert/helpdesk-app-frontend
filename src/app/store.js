@@ -6,6 +6,7 @@ import roloesReducer from "../features/rolesSlice";
 import permissionsReducer from "../features/permissionSlice";
 import companiesReducer from "../features/companiesSlice"
 import teamsReducer from "../features/teamsSlice";
+import projectsReducer from "../features/projectsSlice";
 
 const store = configureStore({
   reducer: {
@@ -16,6 +17,7 @@ const store = configureStore({
     permissions:permissionsReducer,
     companies:companiesReducer,
     teams:teamsReducer,
+    projects:projectsReducer,
   },
 });
 
