@@ -8,6 +8,8 @@ import companiesReducer from "../features/companiesSlice"
 import teamsReducer from "../features/teamsSlice";
 import projectsReducer from "../features/projectsSlice";
 import ticketsReducer from "../features/ticketsSlice";
+import contractsReducer from "../features/contractsSlice";
+import invoicesReducer from "../features/invoicesSlice";
 
 const store = configureStore({
   reducer: {
@@ -20,6 +22,8 @@ const store = configureStore({
     teams:teamsReducer,
     projects:projectsReducer,
     tickets:ticketsReducer,
+    contracts:contractsReducer,
+    invoices:invoicesReducer,
   },
 });
 

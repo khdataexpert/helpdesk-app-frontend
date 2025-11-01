@@ -14,6 +14,10 @@ import Projects from "../Pages/Projects/Projects"
 import ProjectsData from "../Pages/Dashboard/ProjectsData/ProjectsData";
 import Tickets from "../Pages/Tickets/Tickets";
 import TicketsData from "../Pages/Dashboard/TicketsData/TicketsData";
+import Contracts from "../Pages/Contracts/Contracts";
+import ContractsData from "../Pages/Dashboard/ContractsData/ContractsData";
+import Invoices from "../Pages/Invoices/Invoices";
+import InvoicesData from "../Pages/Dashboard/InvoicesData/InvoicesData";
 
 const router = createBrowserRouter([
     {
@@ -41,8 +45,10 @@ const router = createBrowserRouter([
                     { path: "projects/:id", element: <ProjectsData /> },
                     { path: "tickets", element: <Tickets/> },
                     { path: "tickets/:id", element: <TicketsData /> },
-                    { path: "contracts", element: <p className="p-8">Contracts Page</p> },
-                    { path: "invoices", element: <p className="p-8">Invoices Page</p> },
+                    { path: "contracts", element: <Contracts/> },
+                    { path: "contracts/:id", element: <ContractsData /> },
+                    { path: "invoices", element: <Invoices/> },
+                    { path: "invoices/:id", element: <InvoicesData /> },
                     { path: "roles", element: <Roles /> },
                 ],
             },
