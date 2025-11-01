@@ -12,6 +12,8 @@ import Teams from "../Pages/Teams/Teams";
 import TeamsData from "../Pages/Dashboard/TeamsData/TeamsData";
 import Projects from "../Pages/Projects/Projects"
 import ProjectsData from "../Pages/Dashboard/ProjectsData/ProjectsData";
+import Tickets from "../Pages/Tickets/Tickets";
+import TicketsData from "../Pages/Dashboard/TicketsData/TicketsData";
 
 const router = createBrowserRouter([
     {
@@ -37,7 +39,8 @@ const router = createBrowserRouter([
                     { path: "/teams/:id", element: <TeamsData /> },
                     { path: "projects", element: <Projects/> },
                     { path: "projects/:id", element: <ProjectsData /> },
-                    { path: "tickets", element: <p className="p-8">Tickets Page</p> },
+                    { path: "tickets", element: <Tickets/> },
+                    { path: "tickets/:id", element: <TicketsData /> },
                     { path: "contracts", element: <p className="p-8">Contracts Page</p> },
                     { path: "invoices", element: <p className="p-8">Invoices Page</p> },
                     { path: "roles", element: <Roles /> },

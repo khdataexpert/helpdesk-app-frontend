@@ -7,6 +7,7 @@ import permissionsReducer from "../features/permissionSlice";
 import companiesReducer from "../features/companiesSlice"
 import teamsReducer from "../features/teamsSlice";
 import projectsReducer from "../features/projectsSlice";
+import ticketsReducer from "../features/ticketsSlice";
 
 const store = configureStore({
   reducer: {
@@ -18,6 +19,7 @@ const store = configureStore({
     companies:companiesReducer,
     teams:teamsReducer,
     projects:projectsReducer,
+    tickets:ticketsReducer,
   },
 });
 
